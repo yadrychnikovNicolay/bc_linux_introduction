@@ -55,7 +55,7 @@ user and execute ls -l on them. **Chaining/piping commands is NOT allowed!**
 1. With the find command, find all the files in the folder ``/home/student/findme/`` that have an authorization of ``0777`` and change the rights of these files to ``0755``
     > Your command : find /home/student/findme/ -type f -perm 0777 -exec chmod 0755 {} \;
 
-### Text Manipulation
+### 3. Text Manipulation
 
 #### Pitch
 When you work with linux a graphical user interface is not always available. In most cases, you'll just have the access to a terminal of a remote machine, on which you have just logged in using ssh. It is therefore interesting to be able to use specific commands to easily find a file, folder or even search for pieces of text in files. This is what we will do here.
@@ -92,7 +92,7 @@ machine for which the shell is set to ``/bin/false``.
     > Your response :
     > Your command :
 
-### Piping and Redirection
+### 4. Piping and Redirection
 
 #### Pitch
 Learning the wonders of piping and redirections with the linux terminal
@@ -153,7 +153,7 @@ Read the following [article](https://ryanstutorials.net/linuxtutorial/piping.php
 1. Using the previous nl command, the head and tail commands, display the lines of /etc/passwd between line 7 and line 12
     > Your commands :
 
-### Bash Environment
+### 5. Bash Environment
 
 #### Pitch
 Figuring out the environment variables and their usage
@@ -165,7 +165,7 @@ Variables are made up of names that are assigned values. For example, a French u
 
 The meaning of an environment variable and the type of value that can be assigned to it are determined by the application that uses it. There are a small number of well-known environment variables, whose meaning and type of value are well determined, and which are used by many applications.
 
-### Process
+### 6. Process
 
 #### Program VS Process
 A process is a program that executes and that also has its ordinal counter, its registers and its variables; this is the subtlety between program and process. The difference between a process and a program is thin: the process has the program but also the current state of this one in the memory of the computer. The program is ultimately the set of files that, when executed, become the process.
@@ -175,7 +175,7 @@ A PID (that is, a process identification number) is an identification number tha
 
 Source: https://frameboxxindore.com/linux/what-is-pid-in-linux.html
 
-### Protocols and Servers
+### 7. Protocols and Servers
 
 #### Pitch
 Overview of server and internet protocols.
@@ -235,7 +235,7 @@ Overview of server and internet protocols.
 1. Create a share file with samba between your Kali machine and your student machine.
     > No answer required
 
-### Downloading Files
+### 8. Downloading Files
 
 #### Pitch
 Learning how to transfer files between files different machines.
@@ -263,7 +263,7 @@ Learning how to transfer files between files different machines.
 1. On the student machine,  transfer ``/etc/passwd`` file to your kali machine with tftp
     > Your commands : 
 
-### Project
+### 9. Project
 
 #### Context
 The local library in your little town has no funding for Windows licenses so the director is considering Linux. Some users are sceptical and ask for a demo. The local IT company where you work is taking up the project and you are in charge of setting up a server and a workstation.
