@@ -4,7 +4,7 @@ BeCode Linux Module - Introduction - To finish
 
 ## Chapters
 
-### Terminal Basics
+### 1. Terminal Basics
 
 #### Pitch
 
@@ -23,7 +23,7 @@ You should be able to use the right terminal syntax:
 
 As you'll see, the exercises below give you the objective, but not how to do them. When you don't know, it's time to ask your new BFF: Google! That's one core rule at BeCode : before asking your neighbour for help, ask the internet!
 
-### Finding Files
+### 2. Finding Files
 
 #### Pitch
 When you work with linux a graphical user interface is not always available. In most cases, you'll just have the access to a terminal of a remote machine, on which you have just logged in using ssh. It is therefore interesting to be able to use specific commands to easily find a file, folder or even search for pieces of text in files. This is what we will do here.
