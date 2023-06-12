@@ -138,19 +138,19 @@ Read the following [article](https://ryanstutorials.net/linuxtutorial/piping.php
     > Your command : find /etc -name *conf* 2> /dev/null
 
 1. Now redirect the standard output and the error output of the ``find /etc -name *conf*`` command to two different files (std.out and std.err)
-    > Your command :
+    > Your command : find /etc -name conf 2> errors.txt 1> output.txt
 
 1. What does the mkfifo command do?
     > No answer required
 
 1. Create a pipe named "MyNammedPipe". Then execute the pwd command which will transmit the data in this pipe. Then use the cat command to read the contents of your "MyNammedPipe" pipe.
-    > Your commands :
+    > Your commands : mkfifo MyNamedPipe pwd > MyNamedPipe cat MyNamedPipe
 
 1. With cat command, add number the lines in the file /etc/passwd with the command ``nl``
-    > Your commands :
+    > Your commands : cat /etc/passwd | nl
     
 1. Using the previous nl command, the head and tail commands, display the lines of /etc/passwd between line 7 and line 12
-    > Your commands :
+    > Your commands : nl /etc/passwd | head -n 11 | tail -n 4
 
 ### 5. Bash Environment
 
