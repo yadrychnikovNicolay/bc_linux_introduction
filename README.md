@@ -70,12 +70,11 @@ When you work with linux a graphical user interface is not always available. In 
 1. Display the lines in the passwd file starting with login names of 3 or 4 characters.
     > Your commands : awk -F: '{if(length($1) == 3 || (length($1) == 4)) print $1}' passwd
 1. In the file ``/home/student/sample.txt`` how many different values are there in the first column? in the second?
-    > Your response :
+    > Your response : 4
     > 
-    > Your command :
+    > Your command : cut -d "," -f 1 /home/student/sample.txt | sort -u | wc -l
 1. In the file ``/home/student/sample.txt`` sort the values in the second column by frequency of occurrence. (uniq -c can be useful)
-    > Your response :
-    > Your command :
+    > Your command : cut -d "," -f 2 /home/student/sample.txt | sort | uniq -c | sort
 1. In the file ``/home/student/iris.data`` Change the column separator (comma) to tab (make sure that the changes are applied to the file)
     > Your command : sed 's/,/\t/g' iris.data > iris.data.parsed
 1. In the file ``/home/student/iris.data``, extract from this file the column 3 (petal length in cm) (use cut )
@@ -90,8 +89,7 @@ When you work with linux a graphical user interface is not always available. In 
     > Your command :
 1. Using ``/etc/passwd``, extract the user and home directory fields for all users on your student
 machine for which the shell is set to ``/bin/false``. 
-    > Your response :
-    > Your command :
+    > Your command : grep "/bin/false$" /etc/passwd | cut -d ":" -f 1,6
 
 ### 4. Piping and Redirection
 
