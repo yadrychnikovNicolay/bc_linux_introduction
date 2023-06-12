@@ -71,6 +71,7 @@ When you work with linux a graphical user interface is not always available. In 
     > Your commands : awk -F: '{if(length($1) == 3 || (length($1) == 4)) print $1}' passwd
 1. In the file ``/home/student/sample.txt`` how many different values are there in the first column? in the second?
     > Your response :
+    > 
     > Your command :
 1. In the file ``/home/student/sample.txt`` sort the values in the second column by frequency of occurrence. (uniq -c can be useful)
     > Your response :
